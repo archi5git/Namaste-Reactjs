@@ -21,6 +21,8 @@
   "author": "Archi Mishra",
   "type": "commonjs",
   "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "devDependencies": {
