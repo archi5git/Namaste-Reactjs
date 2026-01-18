@@ -14,15 +14,19 @@
 ReactElement(Object) => HTML(Browser Understands)
 
 */
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 const parent = React.createElement('div', { id: 'parent' }, [
-  React.createElement('div', { id: 'child' }, [
-    React.createElement('h1', {}, "I'm h1 Tag"),
-    React.createElement('h2', {}, "I'm h2 Tag"),
+  React.createElement('div', { id: 'child', key: "child" }, [
+    React.createElement('h1',{key: "h1-1"}, "I'm h1 Tag"),
+    React.createElement('h2', {key: "h2-1"}, "HELLO WORLD FROM REACT"),
+     React.createElement('h1', {key: "h1-2"} ,"WELCOME TO REACT"),
+    React.createElement('h2', {key: "h2-2"}, "LETS BUILD SOMETHING AWESOME"),
   ]),
-  React.createElement('div', { id: 'child2' }, [
-    React.createElement('h1', {}, "I'm h1 Tag"),
-    React.createElement('h2', {}, "I'm h2 Tag"),
+  React.createElement('div', { id: 'child2', key: "child2" }, [
+    React.createElement('h1', {key: "h1-3"}, "I'm h1 Tag"),
+    React.createElement('h2', {key: "h2-3"}, "I'm h2 Tag"),
   ]),
 ]);
 
