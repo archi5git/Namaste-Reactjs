@@ -1,0 +1,30 @@
+{
+  "name": "namaste-reactjs",
+  "version": "1.0.0",
+  "description": "This is Namaste React",
+  "keywords": [
+    "react",
+    "namaste",
+    "react",
+    "archi",
+    "mishra"
+  ],
+  "homepage": "https://github.com/archi5git/Namaste-Reactjs#readme",
+  "bugs": {
+    "url": "https://github.com/archi5git/Namaste-Reactjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archi5git/Namaste-Reactjs.git"
+  },
+  "license": "ISC",
+  "author": "Archi Mishra",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
+}
