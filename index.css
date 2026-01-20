@@ -1,3 +1,10 @@
-#heading {
+.header {
   color: red;
+  display:flex;
+}
+.logo-container {
+  color: blue;
+}
+.nav-items {
+  color: green;
 }

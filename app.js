@@ -52,11 +52,11 @@ import ReactDOM from 'react-dom/client';
 // In React, Render is the technique that can redirect a page with the help of function render(). Most importantly, render a function we can use to define the HTML code within the HTML element. It helps to display certain views in the UI using certain logic defined in the render function and returns the output.
 
 /* LAYING THE FOUNDATION DAY3*/
-import React from "react";
-import ReactDOM from "react-dom/client";
+//import React from "react";
+//import ReactDOM from "react-dom/client";
 //react Element 
-const heading = React.createElement("h1", {id:"heading",}, "Namaste React!!");
-console.log(heading); //object
+//const heading = React.createElement("h1", {id:"heading",}, "Namaste React!!");
+//console.log(heading); //object
 //ReactDOM
 //const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(heading);
@@ -65,8 +65,8 @@ console.log(heading); //object
 //JSX is a syntactic sugar over React.createElement().
 //jsx code is transpiled before it reaches the JS. -parcel -Babel
 //Babel is a transpiler which converts JSX to React.createElement() code.
-const jsxheading = <h1 id="heading">Hello JSX!!</h1>;
-console.log(jsxheading); //object
+//const jsxheading = <h1 id="heading">Hello JSX!!</h1>;
+//console.log(jsxheading); //object
 //ReactDOM
 //const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(jsxheading);
@@ -85,20 +85,36 @@ console.log(jsxheading); //object
 //*const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(<HeaderComponent/>);
 //root.render(<HeaderComponent2/>);
-const title =() =>(
-  <h1 id="title">Hello Title</h1>
-);
+//);
 //*function HeaderComponent(){
 //    return <h1>I'm Header Component</h1>;
 //};
 //or
-const HeaderComponent2 = ()=>(
-  <div id="header">
-  <title /> 
-  <h1>I'm Header Component 2</h1>
-  </div>
+//App Eat with Heart
+import react from "react";
+import ReactDOM from "react-dom/client";
+const Header=()=>{
+  return(
+    <div className="header">
+      <div className="logo-container">
+        <img className="logo" src="LOGO" alt="logo"/>
+      </div>
+      <div className="nav-items">
+        <ul> 
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>Cart</li>
+        </ul>
+      </div></div>                
   );
-//ReactDOM
+}
+const AppLayout =()=>{
+  return(
+    <div className="app">
+  <Header/>
+        </div>
+  );
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeaderComponent/>);
-root.render(<HeaderComponent2/>);
+root.render(<AppLayout/>);
